@@ -24,16 +24,23 @@ class LineServer(object):
         'LINE_STORE': '1376922440',
         'LINE_MUSIC': '1381425814'
     }
-
-    USER_AGENT  = 'Line/1.4.17
-    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[369]
-    APP_NAME    = "CHROMEOS\t1.4.17\tChrome_OS\t1"
-    PHONE_TYPE  = ApplicationType.IOS
-    PHONE_NAME  = 'IOS\t1.4.17\tiPhone OS\t10.12.0'
+    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
+    APP_VER     = '2.1.5'
     CARRIER     = '51089, 1-0'
-    SYSTEM_NAME = 'LineBot'
+    SYSTEM_NAME = 'LineBot-PC'
+    SYSTEM_VER  = '11.2.5'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
+
+ #   USER_AGENT  = 'Line/1.4.17
+#    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[369]
+ #   APP_NAME    = "CHROMEOS\t1.4.17\tChrome_OS\t1"
+  #  PHONE_TYPE  = ApplicationType.IOS
+   # PHONE_NAME  = 'IOS\t1.4.17\tiPhone OS\t10.12.0'
+    #CARRIER     = '51089, 1-0'
+    #SYSTEM_NAME = 'LineBot'
+    #IP_ADDR     = '8.8.8.8'
+    #EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
     _session    = requests.session()
     channelHeaders  = {}
