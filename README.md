@@ -1,1 +1,1 @@
-# anjing
+# SEMUA AKAN MATI PADA WAKTUNYA
